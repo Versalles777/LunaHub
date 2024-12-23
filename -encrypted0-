@@ -1,5 +1,5 @@
 local QuestGiverSea = {
-  sea3 = {
+  [3] = {
       -- Porto
       [1500] = {
           name = "Porto",
