@@ -298,12 +298,12 @@ local QuestManager = {} do
         },
     }  
   }
-  function QuestManager:QuestTable(sea)
+end
+function QuestManager:QuestTable(sea)
     if QuestGiverSea[sea] then
       return QuestGiverSea[sea]
     else
       return false
     end
-  end
 end
 return QuestManager
