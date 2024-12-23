@@ -1,8 +1,6 @@
 local httpService = game:GetService("HttpService")
-
-local QuestManager = {} do
-    local QuestGiverSea = {
-      [3] = {
+local QuestGiverSea = {
+    [3] = {
         -- Porto
         [1500] = {
             name = "Porto",
@@ -297,13 +295,13 @@ local QuestManager = {} do
             },
         },
     }  
-  }
-end
+}
+local QuestManager = {} 
+
 function QuestManager:QuestTable(sea)
     if QuestGiverSea[sea] then
       return QuestGiverSea[sea]
     else
-      return false
-    end
+        return false
 end
 return QuestManager
