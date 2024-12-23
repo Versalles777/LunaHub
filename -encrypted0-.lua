@@ -306,3 +306,6 @@ local QuestTable = function(sea)
   end
 
 end
+
+
+return QuestTable
