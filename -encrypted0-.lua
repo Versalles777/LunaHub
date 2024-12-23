@@ -1,4 +1,7 @@
-local QuestGiverSea = {
+local httpService = game:GetService("HttpService")
+
+local QuestManager = {} do
+  local QuestGiverSea = {
   [3] = {
       -- Porto
       [1500] = {
@@ -298,7 +301,7 @@ local QuestGiverSea = {
 
 
 
-local QuestTable = function(sea)
+function QuestManager:QuestTable(sea)
   if QuestGiverSea[sea] then
     return QuestGiverSea[sea]
   else
@@ -306,6 +309,6 @@ local QuestTable = function(sea)
   end
 
 end
-
-
+end
+return QuestManager
 return QuestTable
